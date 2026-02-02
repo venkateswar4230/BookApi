@@ -53,6 +53,10 @@ app.use(express.json());
 // Routes
 
 app.use(bookRoutes);
+app.get("/", (req, res) => 
+  { res.redirect("/api/books"); 
+    
+  });
 
 // Start server
 
